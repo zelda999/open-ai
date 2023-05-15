@@ -21,7 +21,6 @@ function loader(element) {
 }
 
 function typeText(element, text) {
-  console.log("🚀 ~ file: script.js:24 ~ typeText ~ text:", text)
   let index = 0;
 
   let interval = setInterval(() => {
@@ -87,7 +86,7 @@ const handleSubmit = async (e) => {
 
   // fetch data from server -> bot's response
 
-  const response = await fetch('http://localhost:9000', {
+  const response = await fetch('https://open-ai-e7jm.onrender.com/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
