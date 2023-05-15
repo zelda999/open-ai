@@ -46,8 +46,7 @@ function generateUniqueId() {
 }
 
 function chatStripe(isAi, value, uniqueId) {
-  console.log("🚀 ~ file: script.js:49 ~ chatStripe ~ uniqueId:", uniqueId)
-  console.log("🚀 ~ file: script.js:49 ~ chatStripe ~ value:", value)
+  
   return (
     `
       <div class="wrapper ${isAi && 'ai'}">
@@ -102,7 +101,6 @@ const handleSubmit = async (e) => {
   if(response.ok) {
     const data = await response.json();
     const parseData = data.bot.trim();
-    console.log("🚀 ~ file: script.js:103 ~ handleSubmit ~ parseData:", parseData);
 
     typeText(messageDiv, parseData);
   }
